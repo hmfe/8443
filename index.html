@@ -1,0 +1,55 @@
+<!doctype html>
+<html lang="en">
+<head><meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <title>Search Application</title>
+    <meta name="description" content="HTML5 CSS3 JS Search Application Work Task">
+    <meta name="author" content="Anas Naim">
+    <meta name="keywords" content="HTML5, CSS3, JS, Search Application">
+    <link rel="stylesheet" href="style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="shortcut icon" href="img/favicon.png" />
+</head>
+<body>
+    <div class="fullscreen-bg">
+        <video loop muted autoplay poster="img/maxresdefault.jpg" class="fullscreen-bg-video">
+            <source src="img/video.webm" type="video/webm">
+            <source src="img/video.mp4" type="video/mp4">
+        </video>
+    </div>
+    <div class="overlay" style="display: block;"></div>
+    <!-- This is the header tag that cotains any header contents -->
+    <header>
+        <h1>Search Application</h1>
+        <h2>HTML5 CSS3 JS Search Application Work Task</h2>
+    </header>
+    <main>
+        <!-- This first section contains CSS-wizardry Task -->
+        <section class="center">
+            <h3>CSS-wizardry</h3>
+            <button id="delete">Delete <span>&#215;</span></button>
+        </section>
+        
+        <!-- This section contains Search box -->
+        <section>
+            <div class="search">
+              <label for="city">Your Country: </label>
+              <input type="text" id="city" placeholder="Search for your country" autocomplete="off" >
+              <input type="submit" class="searchBtn" value="SEARCH" >
+              <div class="result">
+                  <ul>
+                  </ul>
+              </div>
+            </div>
+        </section>
+        <!-- This section contains Search Result -->
+        <section class="searchHistory">
+            <h3>Search history: <span id="clear">Clear search history</span></h3>
+            <ul>
+            </ul>
+        </section>
+    </main>
+    <footer>&copy; Anas Naim. All Rights Reserved</footer>
+  <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+  <script src="scripts.js"></script>
+</body>
+</html>
