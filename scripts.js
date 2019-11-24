@@ -17,6 +17,8 @@
                 AddHistory($( "#city" ).val());
                 $( ".result ul" ).text("");
                 $( "#city" ).val("");
+                return false;
+                 e.preventDefault();
             }
             // check which key is typed, and prevent illigal charachters
             else if (!((key == 8) || (key == 32) || (key == 46) || (key >= 35 && key <= 40) || (key >= 65 && key <= 90))) {
@@ -104,6 +106,6 @@
         
         $( ".searchHistory ul" ).text("");
         for(var i=0;i<localStrArray.length;i++)
-        $( ".searchHistory ul" ).append($("<li data-term='"+localStrArray[i].term+"' data-datetime='"+localStrArray[i].date+"'>"+localStrArray[i].term+" <span class='datetime'>"+localStrArray[i].date+"</span> <span class='rm'>&#215;</span></li>"))
+        $( ".searchHistory ul" ).append($("<li data-term='"+localStrArray[i].term+"' data-datetime='"+localStrArray[i].date+"'>"+localStrArray[i].term+" <time datetime="+localStrArray[i].date+" class='datetime'>"+localStrArray[i].date+"</time> <a href='javascript:void(0)' class='rm'>&#215;</a></li>"))
     }
   });
