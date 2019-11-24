@@ -26,7 +26,7 @@
             {
                  // search for country from from api on every key pressed, if more that 2 chars to not stress api 
                if($(this).val().length>=2)
-               $.get( "//smn.ae/test/api.php?q="+$(this).val(), function(data) {
+               $.get( "https://smn.ae/test/api.php?q="+$(this).val(), function(data) {
                 $( ".result ul" ).text("");
                    var res = $.parseJSON(data);
                    for(var i=0;i<res.length;i++)
